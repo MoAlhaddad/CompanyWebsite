@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
-
+import novigoHeadLogo from 'assets/novigo-head-logo.svg';
 export default function SEO({
   description = 'startup product landing page',
   author = 'JSM',
@@ -48,6 +48,7 @@ export default function SEO({
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
       ))}
+  	  <link rel = "icon" type = "image/png" href ={novigoHeadLogo}></link>
     </Head>
   );
 }

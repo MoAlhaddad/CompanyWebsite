@@ -81,7 +81,12 @@ export default {
       alignItems: 'center',
       justifyContent: 'space-between',
     },
-    main: {},
+    main: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      p: ['0 5vw', '0 10vw', '0 20vw']
+    },
   },
   section: {
     keyFeature: {
