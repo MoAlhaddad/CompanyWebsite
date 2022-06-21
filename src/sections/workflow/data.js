@@ -2,27 +2,27 @@
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Set Task Instructions',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Access What Services Your looking for How We can help and determine the best Approach to take',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Contract',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Determine Timeline On When your looking for services to be completely met, and assess Cost of Service',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Proposal',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Send Over our Proposal ',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Novigo receives funds payment',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'At Least 10% of proposal will be paid upfront to serve as a retainer for any cloud service cost incurred upon compl',
   },
 ];
 

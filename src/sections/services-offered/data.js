@@ -5,7 +5,7 @@ import Secure from 'assets/services/secure.svg';
 
 const data = {
   subTitle: "our services",
-  title: "Business Goals Achieved with Design",
+  title: "Node.js Server Side Development",
   features: [
     {
       id: 1,

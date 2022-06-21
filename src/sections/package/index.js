@@ -9,6 +9,24 @@ import data from './data';
 
 export default function Package() {
   const { monthly, annual } = data;
+  const [state, setState] = useState({
+    active: 'monthly',
+    pricingPlan: monthly
+  })
+
+  const handlePricingPlan = (plan) => {
+    if(plan === 'annual') {
+      setState({
+        active: 'annual',
+        pricingPlan: annual
+      })
+    } else {
+      setState({
+        active: 'monthly',
+        pricingPlan: monthly
+      })
+    }
+  }
 
   const sliderParams = {
     additionalTransfrom: 0,
@@ -34,6 +52,38 @@ export default function Package() {
   };
 
   return (
-    <h1>Package</h1>
+    <section id="pricing" sx={{ variant: 'section.pricing'}}>
+      <Container>
+        <SectionHeader 
+        slogan="Pricing Plan"
+        title="Choose your budget"
+        />
+
+        <Flex sx={styles.buttonGroup}>
+            <Box sx={styles.buttonGroupInner}>
+              <button
+                className={state.active === 'monthly' ? 'active' : ''}
+                type="button"
+                aria-label="monthly"
+                onClick={() => handlePricingPlan('monthly')}
+              >
+                    ServerSide Development Service 
+              </button>
+              <button
+                className={state.active === '500$' ? 'active' : ''}
+                type="button"
+                aria-label="DataBase"
+                onClick={() => handlePricingPlan('500$')}>
+                  Database Management 
+                </button>
+            </Box>
+           </Flex>
+           <Box sx={styles.pricingWrapper} className="pricing__wrapper">
+              <Carousel>
+                
+              </Carousel>
+           </Box>
+      </Container>
+    </section>
   );
 }
