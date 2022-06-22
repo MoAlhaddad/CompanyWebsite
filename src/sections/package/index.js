@@ -1,6 +1,6 @@
 import { jsx, Container, Box, Flex } from 'theme-ui';
 import React, { useState } from 'react';
-import Carousel from 'react-multi-carousel';
+import Carousel from 'components/carousel/carousel';
 import PriceCard from 'components/price-card';
 import ButtonGroup from 'components/button-group';
 import SectionHeader from 'components/section-header';
@@ -80,7 +80,10 @@ export default function Package() {
            </Flex>
            <Box sx={styles.pricingWrapper} className="pricing__wrapper">
               <Carousel>
-                
+                <h1>Slide 1</h1>
+                <h1>Slide 2</h1>
+                <h1>Slide 3</h1>
+                <h1>Slide 4</h1>
               </Carousel>
            </Box>
       </Container>

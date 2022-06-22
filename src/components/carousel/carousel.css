@@ -1,0 +1,12 @@
+.embla {
+  overflow: hidden;
+  box-shadow: 1em 0em 1em lightgray;
+  margin: 2em 0;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+}
