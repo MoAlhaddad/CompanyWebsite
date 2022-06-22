@@ -14,18 +14,16 @@ export default function ServiceSection() {
     }
   
     return (
-      <section sx={{ varaint: 'section.services'}}>
-        <Container sx={styles.containerBox}>
-          <Box sx={styles.thumbnail}>
-            <Image src={ServiceThumb} alt="Thumbnail" />
-            <Button
-              sx={styles.videoBtn}
-              onClick={handleClick}
-              aria-label="Play Button"
-              >
-              </Button>
+      <section sx={{ varaint: 'section.services', ...styles.servicesContainer}} id="services">
+        {data.map(dataItem => (
+          <Box sx={styles.servicesSubContainer}>
+            <Image src={dataItem.imgSrc} alt={dataItem.altText} sx={styles.serviceImg} />
+            <h2>{dataItem.title}</h2>
+            <p sx={styles.service}>
+              {dataItem.text}
+            </p>
           </Box>
-        </Container>
+        ))}
       </section>
     );
   }

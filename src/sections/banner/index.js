@@ -6,7 +6,7 @@ import styles from './styles';
 
 export default function Banner() {
     return (
-      <section sx={styles.banner} id="home">
+      <section sx={styles.banner} id="home" style={{background: 'linear-gradient(110deg, #E58C22 60%, #2ABDEC 60%)'}}>
         <Container sx={styles.banner.container}>
           <Box sx={styles.banner.contentBox}>
             <Heading as="h1" varaint="heroPrimary">
@@ -17,10 +17,6 @@ export default function Banner() {
                 or Even having Struggles Improving Current Software ? Search no Further Here at Novigo we are here to Serve!
               </Text>
               <Button variant="primary">Explore</Button>
-          </Box>
-  
-          <Box sx={styles.banner.imageBox}>
-            <Image src={Excersise} alt='banner'/>
           </Box>
         </Container>
       </section>

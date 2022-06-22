@@ -36,6 +36,25 @@ const styles = {
       height: [310, "auto"],
     },
   },
+  servicesContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: '100%'
+  },
+  servicesSubContainer: {
+    width: '100%',
+  },
+  service: {
+    width: '100%'
+  },
+  serviceImg: {
+    maxWidth:'30em',
+    maxHeight:'25em',
+    width: 'auto',
+    height: 'auto',
+  },
   shapeBox: {
     position: "absolute",
     bottom: -68,
