@@ -16,7 +16,7 @@ export default function ServiceSection() {
     return (
       <section sx={{ varaint: 'section.services', ...styles.servicesContainer}} id="services">
         {data.map(dataItem => (
-          <Box sx={styles.servicesSubContainer}>
+          <Box key={dataItem.id} sx={styles.servicesSubContainer}>
             <Image src={dataItem.imgSrc} alt={dataItem.altText} sx={styles.serviceImg} />
             <h2>{dataItem.title}</h2>
             <p sx={styles.service}>

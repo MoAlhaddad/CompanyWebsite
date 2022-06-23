@@ -1,0 +1,6 @@
+{
+    "mediumClientId": "f7e0525a46ad",
+    "mediumClientSecret": "4425a75f00304a9f4d8e5ca5f05a6066d4d5cb74",
+    "mediumCallback": "https://novigo.info/callback/medium",
+    "mediumAuthorizationToken": "Bearer 25d94e35a72f4d0073fe76964cbd442dee331debc4cfd37317b08e3cce5fcb4dc"
+}

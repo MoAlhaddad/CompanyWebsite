@@ -2,9 +2,8 @@
 const data = [
   {
     id: 1,
-    title: 'Set Task Instructions',
-    text:
-      'Access What Services Your looking for How We can help and determine the best Approach to take',
+    title: 'Communicate with Client',
+    text: 'Communicate with client to retrieve initial requirements on how to improve your current project or create a new project'
   },
   {
     id: 2,
@@ -14,9 +13,9 @@ const data = [
   },
   {
     id: 3,
-    title: 'Proposal',
+    title: 'Constant Communication',
     text:
-      'Send Over our Proposal ',
+      "Constant communication to ensure the customer get's best project possible.",
   },
   {
     id: 4,

@@ -6,11 +6,8 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import ServiceSection from 'sections/services-offered';
-import Feature from 'sections/feature';
 import CoreFeature from 'sections/core-features';
 import WorkFlow from 'sections/workflow';
-import Package from 'sections/package';
-import TeamSection from 'sections/team-section';
 import Blog from 'sections/blog';
 
 export default function IndexPage() {
@@ -20,11 +17,8 @@ export default function IndexPage() {
           <SEO title="Novigo" />
           <Banner />
           <ServiceSection />
-          <Feature />
           <CoreFeature />
           <WorkFlow />
-          <Package />
-          <TeamSection />
           <Blog />
         </Layout>
     </ThemeProvider>

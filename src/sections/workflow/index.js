@@ -1,6 +1,7 @@
 import { jsx } from 'theme-ui';
-import { Container, Grid, Box, Heading, Text } from 'theme-ui';
+import { Container, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
+import Workflow from 'assets/workflow/workflow.png';
 
 import styles from './styles';
 import data from './data';
@@ -9,23 +10,7 @@ export default function WorkFlow() {
   return (
     <section sx={styles.workflow}>
       <Container>
-        <SectionHeader
-          slogan="Let us Find the Sloution"
-          title="Meet Your Expecations with our Expertise"
-          isWhite={true}
-          />
-
-          <Grid sx={styles.grid}>
-            {data.map((item) => (
-              <Box sx={styles.card} key={item.id}>
-                <Box sx={styles.iconBox}>{`0${item.id}`}</Box>
-                <Box sx={styles.wrapper}>
-                  <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                  <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
-                  </Box>
-              </Box>
-            ))}
-          </Grid>
+        <Image src={Workflow} alt='workflow' sx={styles.workflowImg} />
       </Container>
       </section>
   );
