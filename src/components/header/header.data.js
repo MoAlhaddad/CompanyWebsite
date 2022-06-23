@@ -11,4 +11,5 @@ export default [
     path: 'blog',
     label: 'Blog',
   },
+ 
 ];
