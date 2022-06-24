@@ -3,10 +3,11 @@ import { jsx, Box, Container, Image, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
 import FooterLogo from 'assets/logo.svg';
+import EmailComponent from 'components/emailform/EmailComponent';
 
 export default function Footer() {
   return (
-    <h1>Footer</h1>
+    <EmailComponent/>
   );
 }
 
