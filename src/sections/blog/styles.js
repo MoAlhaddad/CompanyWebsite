@@ -11,7 +11,7 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     justifyContent: 'flex-start',
-    minHeight: '50em',
+    minHeight: '10em',
     maxHeight: '60em',
     overflowY: 'auto',
     flexWrap: "wrap",

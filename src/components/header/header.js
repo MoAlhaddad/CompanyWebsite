@@ -8,7 +8,7 @@ import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 import NovigoLogo from 'assets/novigo-logo.svg'
 
-export default function Header({ className }) {
+export default function Header({ className, contactUsRef }) {
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
@@ -32,6 +32,12 @@ export default function Header({ className }) {
           className="donate__btn"
           variant="secondary"
           aria-label="Get Started"
+          onClick={() => {
+            console.log('contactUsRef:', contactUsRef);
+            if(contactUsRef.current) {
+              contactUsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }}
         >
           Contact Us
         </Button>

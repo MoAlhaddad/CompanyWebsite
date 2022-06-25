@@ -6,7 +6,7 @@ import styles from './styles';
 
 export default function Banner() {
     return (
-      <section sx={styles.banner} id="home" style={{background: 'linear-gradient(110deg, #E58C22 60%, #2ABDEC 60%)'}}>
+      <section sx={styles.banner} id="home" style={{background: 'linear-gradient(110deg, #E58C22 60%, #2ABDEC 60%)', marginTop: '8em'}}>
         <Container sx={styles.banner.container}>
           <Box sx={styles.banner.contentBox}>
             <Heading as="h1" varaint="heroPrimary">
