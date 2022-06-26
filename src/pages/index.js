@@ -10,6 +10,7 @@ import CoreFeature from 'sections/core-features';
 import WorkFlow from 'sections/workflow';
 import Blog from 'sections/blog';
 import ContactUs from 'sections/contact-us';
+import AboutUs from 'sections/about-us';
 
 export default function IndexPage() {
   const contactUsRef = useRef();
@@ -22,6 +23,7 @@ export default function IndexPage() {
           <CoreFeature />
           <WorkFlow />
           <Blog />
+          <AboutUs />
           <ContactUs ref={contactUsRef} />
         </Layout>
     </ThemeProvider>

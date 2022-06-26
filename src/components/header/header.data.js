@@ -11,5 +11,9 @@ export default [
     path: 'blog',
     label: 'Blog',
   },
+  {
+    path: 'about-us',
+    label: 'About Us',
+  },
  
 ];
