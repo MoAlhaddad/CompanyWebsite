@@ -22,8 +22,8 @@ export default function IndexPage() {
           <ServiceSection />
           <CoreFeature />
           <WorkFlow />
-          <Blog />
           <AboutUs />
+          <Blog />
           <ContactUs ref={contactUsRef} />
         </Layout>
     </ThemeProvider>

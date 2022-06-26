@@ -13,10 +13,13 @@ const styles = {
     width: '100%'
   },
   aboutusImg: {
-    maxWidth:'30em',
-    maxHeight:'25em',
-    width: 'auto',
-    height: 'auto',
+    height: '20em',
+    width: '20em',
+    borderStyle: 'dashed',
+    padding: '1em',
+    borderWidth: ['0.25em', '0.3em', '0.35em'],
+    borderColor: '#0B5FDD',
+    borderRadius: '50%'
   },
   shapeBox: {
     position: "absolute",
