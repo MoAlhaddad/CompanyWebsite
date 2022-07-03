@@ -21,8 +21,8 @@ export default function AboutUs(){
               <p sx={styles.aboutus}>
                 {dataItem.text}
                 <br />
-                {dataItem.href}
-                <FaLinkedin  />
+                <FaLinkedin style={{color: '#0077B5', fontSize: '2em'}} onClick={() => window.open(dataItem.href, '_blank')}  />
+             
               </p>
              
             </Box>

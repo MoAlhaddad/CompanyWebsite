@@ -32,6 +32,7 @@ export default function Header({ className, contactUsRef }) {
           className="donate__btn"
           variant="secondary"
           aria-label="Get Started"
+          background-color="black"
           onClick={() => {
             console.log('contactUsRef:', contactUsRef);
             if(contactUsRef.current) {
@@ -107,7 +108,7 @@ const styles = {
       lineHeight: "1.2",
       transition: "all 0.15s",
       "&:hover": {
-        color: "primary",
+        color: "black",
       },
       "&.active": {
         color: "primary",

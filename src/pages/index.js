@@ -18,13 +18,13 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
         <Layout contactUsRef={contactUsRef}>
           <SEO title="Novigo" />
-          <Banner />
+          <Banner contactUsRef={contactUsRef} />
           <ServiceSection />
           <CoreFeature />
           <WorkFlow />
           <Blog />
           <AboutUs />
-          <ContactUs ref={contactUsRef} />
+          {/* <ContactUs ref={contactUsRef} /> */}
         </Layout>
     </ThemeProvider>
   );

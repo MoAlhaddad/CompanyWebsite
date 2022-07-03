@@ -7,24 +7,7 @@ import { Link } from 'react-scroll';
 import { FaFacebookF, FaTwitter, FaGithubAlt, FaDribbble } from 'react-icons/fa';
 import menuItems from './header.data';
 
-const social = [
-  {
-    path: '/',
-    icon: <FaFacebookF />,
-  },
-  {
-    path: '/',
-    icon: <FaTwitter />,
-  },
-  {
-    path: '/',
-    icon: <FaGithubAlt />,
-  },
-  {
-    path: '/',
-    icon: <FaDribbble />,
-  },
-];
+
 
 export default function MobileDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -60,13 +43,7 @@ export default function MobileDrawer() {
           ))}
         </Box>
         <Box sx={styles.menuFooter}>
-          <Box styles={styles.social}>
-            {social.map((socialItem, i) => (
-              <Box as="span" key={i} sx={styles.social.icon}>
-                  <Link to={socialItem.path}>{socialItem.icon}</Link>
-                </Box>
-            ))}
-          </Box>
+         
         </Box>
       </Box>
     </Scrollbars>
@@ -168,7 +145,7 @@ const styles = {
   },
 
   button: {
-    color: 'white',
+    color: 'black',
     fontSize: '14px',
     fw: '700',
     height: '45px',
