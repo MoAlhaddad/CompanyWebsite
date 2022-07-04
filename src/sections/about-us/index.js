@@ -12,8 +12,8 @@ export default function AboutUs(){
       }
 
       return (
-        <section sx={{ varaint: 'section.aboutus', ...styles.aboutusContainer}} id="aboutus">
-            {/* <Link to='/https://www.linkedin.com/in/ali-alhaddad/' /> */}
+        <section sx={{ varaint: 'section.our-team', ...styles.aboutusContainer}} id="our-team">
+          <h1>Our Team</h1>
           {data.map(dataItem => (
             <Box key={dataItem.id} sx={styles.aboutusSubContainer}>
               <Image src={dataItem.imgSrc} alt={dataItem.altText} sx={styles.aboutusImg} />
@@ -22,7 +22,6 @@ export default function AboutUs(){
                 {dataItem.text}
                 <br />
                 <FaLinkedin style={{color: '#0077B5', fontSize: '2em'}} onClick={() => window.open(dataItem.href, '_blank')}  />
-             
               </p>
              
             </Box>

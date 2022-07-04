@@ -6,7 +6,7 @@ import Logo from "components/logo";
 import LogoDark from "assets/logo.svg";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
-import NovigoLogo from 'assets/novigo-logo.svg'
+import NovigoLogo from "assets/novigo-logo.svg";
 
 export default function Header({ className, contactUsRef }) {
   return (
@@ -33,14 +33,13 @@ export default function Header({ className, contactUsRef }) {
           variant="secondary"
           aria-label="Get Started"
           background-color="black"
-          onClick={() => {
-            console.log('contactUsRef:', contactUsRef);
-            if(contactUsRef.current) {
-              contactUsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href =
+              "https://docs.google.com/document/d/1mqTM1xI0CkUAct-xiiaFWr9q4ApjsEgPhvrdED_yodU/edit?usp=sharing_eil_se_dm&ts=62c12a61";
           }}
         >
-          Contact Us
+          Check Out Our Rates!
         </Button>
         <MobileDrawer />
       </Container>

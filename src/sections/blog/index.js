@@ -18,8 +18,8 @@ export default function Blogs(props) {
         "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@alialhaddad"
       );
       if (mediumResponse.data.status === "ok") {
-        // setBlogTutorials(mediumResponse.data.items);
-        // setLoading(false);
+        setBlogTutorials(mediumResponse.data.items);
+        setLoading(false);
       }
     }
     getMediumBlogData();
@@ -27,7 +27,7 @@ export default function Blogs(props) {
 
   return (
     <section sx={styles.blogsContainer} id="blog">
-      <h1 style={{alignSelf: 'flex-start !important', background: 'green'}}>Blogs</h1>
+      <h1>Blogs</h1>
       <Container sx={styles.blogTutorialsContainer}>
         {loading ? (
           <Spinner
@@ -62,7 +62,6 @@ export default function Blogs(props) {
           ))
         )}
       </Container>
-      {/* {JSON.stringify(blogTutorials)} */}
     </section>
   );
 }
