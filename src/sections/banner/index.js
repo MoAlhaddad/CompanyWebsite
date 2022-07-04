@@ -6,6 +6,8 @@ import styles from "./styles";
 import ContactUs from "sections/contact-us/index";
 import IndexPage from "pages/index";
 import React, { useState, useEffect } from "react";
+import ScrollToBottom from "react-scroll-to-bottom";
+import { FaAlignCenter } from "react-icons/fa";
 
 
 export default function Banner({ className, contactUsRef }) {
@@ -53,19 +55,32 @@ export default function Banner({ className, contactUsRef }) {
             Current Software ? Search no Further Here at Novigo we are here to
             Serve!
           </Text>
-           
-          
-            <button sx={styles.banner.button} style={{backgroundColor: "rgb(0, 128, 0)",
+          <Button
+            className="donate__btn"
+            variant="primary"
+            aria-label="Get Started"
+            background-color="black"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href =
+                "https://docs.google.com/document/d/1mqTM1xI0CkUAct-xiiaFWr9q4ApjsEgPhvrdED_yodU/edit?usp=sharing_eil_se_dm&ts=62c12a61";
+            }}
+          >
+            Check Out Our Rates!
+          </Button>
+        </Box>
+       
+        <button sx={styles.banner.button} style={{backgroundColor: "rgb(0, 128, 0)",
         marginTop: "8em", color: 'white',
         cursor: 'pointer',
         hover: 'blue',
-        border: '1px solid rgba(34,36,38,.15)',
+        border: '6px solid rgba(34,36,38,.15)',
+        padding: '10px'
      }} onClick={scrollToBottom} >
               Contact Us
             </button>
-  
-        </Box>
       </Container>
+     
     </section>
   );
 }

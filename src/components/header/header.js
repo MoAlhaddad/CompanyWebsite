@@ -28,19 +28,7 @@ export default function Header({ className, contactUsRef }) {
             </Link>
           ))}
         </Flex>
-        <Button
-          className="donate__btn"
-          variant="secondary"
-          aria-label="Get Started"
-          background-color="black"
-          onClick={(e) => {
-            e.preventDefault();
-            window.location.href =
-              "https://docs.google.com/document/d/1mqTM1xI0CkUAct-xiiaFWr9q4ApjsEgPhvrdED_yodU/edit?usp=sharing_eil_se_dm&ts=62c12a61";
-          }}
-        >
-          Check Out Our Rates!
-        </Button>
+       
         <MobileDrawer />
       </Container>
     </header>
