@@ -12,11 +12,11 @@ import Blog from 'sections/blog';
 import ContactUs from 'sections/contact-us';
 import AboutUs from 'sections/about-us';
 import Rates from 'sections/rates';
-import { useStore } from 'react-redux';
 
 
 export default function IndexPage() {
   const contactUsRef = useRef();
+ 
   
   // const checkout = typeof window !== 'undefined' ? localStorage.getItem('checkout') : null
   return (
@@ -29,6 +29,7 @@ export default function IndexPage() {
           <WorkFlow />
           <AboutUs />
           {/* <ContactUs ref={contactUsRef} /> */}
+          {/* <Rates localStorage={localStorage}/> */}
           <Blog />
           <ContactUs ref={contactUsRef} />
           {/* <Rates localStorage={localStorage}/> */}

@@ -2,7 +2,14 @@ import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 
 
+
 const styles = {
+  buttons: {
+    primary: {
+    bg: 'color',
+    minWidth: 120,
+    }
+  },
     banner: {
       pt: ['140px', '145px', '155px', '170px', null, null, '180px', '215px'],
       pb: [2, null, 0, null, 2, 0, null, 5],
@@ -38,39 +45,21 @@ const styles = {
         pt: '10em'
       },
       button: {
-        display: 'flex',
-        position: 'absolute',
-        top:'50%',
-        border: 'none',
-        borderRadius: '10px',
-        color: 'blue',
-        cursor: 'pointer',
-        hover: 'green',
-        lineHeight: '1.21428571em',
-        padding: '.67857143em 1em',
-        background: '#fff',
-        border: '1px solid rgba(34,36,38,.15)',
-        color: 'rgba(255, 255, 255, 0)',
-        borderRadius: '.28571429rem',
-        webkitTransition: 'border-color .1s ease,-webkit-box-shadow .1s ease',
-        transition: 'border-color .1s ease,-webkit-box-shadow .1s ease',
-        transition: 'box-shadow .1s ease,border-color .1s ease',
-        transition: 'box-shadow .1s ease,border-color .1s ease,-webkit-box-shadow .1s ease',
-        webkitBoxShadow: 'none',
-        margin: 0,
-        width: '100%',
-        outline: 0,
-        swebkitTapHighlightColor: 'rgba(255,255,255,0)',
-        bg: '#4BB543',
-        padding: '1em !important',
-        borderRadius: '5px !important'
+        // display: 'flex',
+        // // position: 'absolute',
+        // padding: '1.5em',
+        // top:'50%',
+        // border: 'none',
+        // borderRadius: '10px',
+        // color: 'white',
+        // borderRadius: '2em !important'
         },
       
       contentBox: {
-        width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '60%'],
+        width: ['100%', '100%', '535px', null, '57%', '60%', '68%', '60%'],
         mx: 'auto',
         textAlign: 'center',
-        mb: ['40px', null, null, null, null, 7],
+        mb: ['40px', '40px', null, null, null, 7],
       },
       imageBox: {
         justifyContent: 'center',

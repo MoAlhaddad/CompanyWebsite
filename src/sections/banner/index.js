@@ -1,5 +1,5 @@
 import { jsx } from "theme-ui";
-import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
+import { Container, Box, Heading, Text, Image, Button, View } from "theme-ui";
 import Excersise from "assets/excersise.png";
 import BannerImg from "assets/banner-thumb.png";
 import styles from "./styles";
@@ -7,7 +7,7 @@ import ContactUs from "sections/contact-us/index";
 import IndexPage from "pages/index";
 import React, { useState, useEffect } from "react";
 import ScrollToBottom from "react-scroll-to-bottom";
-import { FaAlignCenter } from "react-icons/fa";
+import { FaAlignCenter, FaBox } from "react-icons/fa";
 
 
 export default function Banner({ className, contactUsRef }) {
@@ -54,32 +54,48 @@ export default function Banner({ className, contactUsRef }) {
             If you need Website, Application, or Even having Struggles Improving
             Current Software ? Search no Further Here at Novigo we are here to
             Serve!
+
           </Text>
+
           <Button
             className="donate__btn"
-            variant="primary"
-            aria-label="Get Started"
-            background-color="black"
+            variant="secondary"
+            aria-label="Check out our Rates"
+            display="flex"
+            bg="white"
+            padding="1.5em"
             onClick={(e) => {
               e.preventDefault();
               window.location.href =
                 "https://docs.google.com/document/d/1mqTM1xI0CkUAct-xiiaFWr9q4ApjsEgPhvrdED_yodU/edit?usp=sharing_eil_se_dm&ts=62c12a61";
             }}
           >
-            Check Out Our Rates!
+          Check Our Rates
           </Button>
+      
+
+          
         </Box>
+      
+        <Box sx={styles.banner.contentBox}>
+        <Button 
        
-        <button sx={styles.banner.button} style={{backgroundColor: "rgb(0, 128, 0)",
-        marginTop: "8em", color: 'white',
-        cursor: 'pointer',
-        hover: 'blue',
-        border: '6px solid rgba(34,36,38,.15)',
-        padding: '10px'
-     }} onClick={scrollToBottom} >
-              Contact Us
-            </button>
+        className="donate__btn"
+        variant="secondary"
+        bg="white"
+        color="blue"
+        aria-label="Contact us"
+        padding= '1.5em'
+        lineHeight= '2em'
+        onClick={scrollToBottom}
+        >
+            Contact Us
+      </Button>
+      </Box>
+     
+   
       </Container>
+         
      
     </section>
   );

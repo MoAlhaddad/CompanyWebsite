@@ -3,11 +3,11 @@ import React, { useState, useEffect } from "react";
 
 export default function Rates(){
     
-    const targetBudget = Number(localStorage.getItem("targetBudget") || 2000);
-    const currentBudget = Number(localStorage.getItem("currentBudget") || 4000);
-    const maintanceBudget = Number(localStorage.getItem("maintanceBudget") || 100);
-    const ContributionFrequency = Number(localStorage.getItem("contributionFrequency") || "Monthly");
-    const projectDuration = Number(localStorage.getItem("projectDuration") || 2);
+    const targetBudget = Number(window.localStorage.getItem("targetBudget") || 2000);
+    const currentBudget = Number(window.localStorage.getItem("currentBudget") || 4000);
+    const maintanceBudget = Number(window.localStorage.getItem("maintanceBudget") || 100);
+    const ContributionFrequency = Number(window.localStorage.getItem("contributionFrequency") || "Monthly");
+    const projectDuration = Number(window.localStorage.getItem("projectDuration") || 2);
 
     const [projDuration, setProjDuration] = useState(projectDuration);
     const [targBudget, setTargBudget] = useState(targetBudget);
@@ -22,11 +22,11 @@ export default function Rates(){
     })
 
     useEffect(() => {
-        localStorage.setItem("targetBudget", targBudget);
-        localStorage.setItem("currentBudget", curBudget);
-        localStorage.setItem("maintanceBudget", mainBudget);
-        localStorage.setItem("contributionFrequency", contributeFrequency);
-        localStorage.setItem("projectDuration", projDuration);
+        window.localStorage.setItem("targetBudget", targBudget);
+        window.localStorage.setItem("currentBudget", curBudget);
+        window.localStorage.setItem("maintanceBudget", mainBudget);
+        window.localStorage.setItem("contributionFrequency", contributeFrequency);
+        window.localStorage.setItem("projectDuration", projDuration);
         
         let Estimate = ( curBudget + contributeFrequency + (mainBudget * projDuration));
 
